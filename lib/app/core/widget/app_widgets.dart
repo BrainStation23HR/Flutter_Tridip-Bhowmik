@@ -35,7 +35,7 @@ class AppWidgets {
     );
   }
 
-  showSimpleDialog(
+  Future? showSimpleDialog(
     String title,
     String body,
     retryClick, {
@@ -83,7 +83,7 @@ class AppWidgets {
     );
   }
 
-  showSimpleToast(
+  void showSimpleToast(
     String? message, {
     String? title,
     bool isSuccess = false,
