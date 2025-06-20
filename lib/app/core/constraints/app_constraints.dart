@@ -25,8 +25,6 @@ mainBorderRadius(double value) => BorderRadius.circular(value.r);
 final imageMaxWidth = Platform.isIOS ? 1024.0 : null;
 final imageMaxHeight = Platform.isIOS ? 1920.0 : null;
 
-// const String gitAccessToken = "";
-
 
 const Transition transition = Transition.fadeIn;
 final Widget gapW3 = appWidget.gapW(3);
