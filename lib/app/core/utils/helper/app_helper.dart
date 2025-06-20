@@ -70,7 +70,7 @@ class AppHelper {
   }
 
 
-  String validateImageURL(String url) {
+ /* String validateImageURL(String url) {
     String finalUrl = url;
     if (url.startsWith("upload")) {
       finalUrl = baseImageUrl + url;
@@ -87,7 +87,7 @@ class AppHelper {
     }
     logger.i("Image url $finalUrl");
     return finalUrl;
-  }
+  }*/
 
 
 

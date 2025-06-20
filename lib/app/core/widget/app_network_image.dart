@@ -27,7 +27,7 @@ class AppNetworkImageProvider extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(radius),
       child: CachedNetworkImage(
-        imageUrl: appHelper.validateImageURL(imagePath ?? ""),
+        imageUrl: imagePath ?? "",
         height: height,
         width: width,
         fit: fit,
