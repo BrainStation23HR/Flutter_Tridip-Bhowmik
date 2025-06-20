@@ -6,13 +6,8 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../../network/api_urls.dart';
-import '../../constraints/app_constraints.dart';
-
 class AppHelper {
   late SharedPreferences prefs;
-
-
 
   Future<void> saveIntPref(String key, int value) async {
     prefs = await SharedPreferences.getInstance();
@@ -69,8 +64,7 @@ class AppHelper {
     }
   }
 
-
-  String validateImageURL(String url) {
+  /*String validateImageURL(String url) {
     String finalUrl = url;
     if (url.startsWith("upload")) {
       finalUrl = baseImageUrl + url;
@@ -88,8 +82,7 @@ class AppHelper {
     logger.i("Image url $finalUrl");
     return finalUrl;
   }
-
-
+*/
 
   String timeConverter(String? time, {int? hourToAdd}) {
     if (time == null || time == "") {
@@ -103,7 +96,6 @@ class AppHelper {
     return DateFormat('hh:mm a').format(parsedTime);
   }
 
-
   String formatDateForField(DateTime selectedDate, {String? dateFormat}) {
     final formatedDate =
         DateFormat(dateFormat ?? 'dd MMM yyyy, EEEE').format(selectedDate);
@@ -111,7 +103,6 @@ class AppHelper {
   }
 
   void setStatusBarWhite() {
-
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -122,8 +113,6 @@ class AppHelper {
   }
 
   void setStatusBarBlack() {
-
-
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -132,7 +121,4 @@ class AppHelper {
       ),
     );
   }
-
-
-
 }

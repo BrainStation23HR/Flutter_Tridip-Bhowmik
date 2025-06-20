@@ -15,3 +15,6 @@ In this project, I am using the GetX architectural pattern. The project structur
 
 Folder Structure of code:
 lib -> main.dart -> routes (app routes, app pages) -> modules (bindings, controller, view) -> network (api client, api urls) -> data (api response model) -> core (utils, helper, widgets, constants)
+
+# Record Video Url:
+https://drive.google.com/file/d/1R6V1HD6NiSoVzblakQosiE_aWgML1r3n/view?usp=sharing

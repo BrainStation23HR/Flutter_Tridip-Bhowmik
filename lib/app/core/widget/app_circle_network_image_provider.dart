@@ -43,7 +43,7 @@ class AppCircleNetworkImageViewer extends StatelessWidget {
         backgroundColor: Colors.white,
         child: ClipOval(
           child: CachedNetworkImage(
-            imageUrl: AppHelper().validateImageURL(imagePath ?? ""),
+            imageUrl: imagePath ?? "",
             height: width,
             width: width,
             fit: BoxFit.cover,
