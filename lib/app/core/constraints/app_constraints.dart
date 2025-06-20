@@ -25,17 +25,8 @@ mainBorderRadius(double value) => BorderRadius.circular(value.r);
 final imageMaxWidth = Platform.isIOS ? 1024.0 : null;
 final imageMaxHeight = Platform.isIOS ? 1920.0 : null;
 
-const String free = "free";
-const String paid = "paid";
-const String regText = "reg";
-const String emailVerification = "email_Verification";
-const String forgotText = "forgot";
-const String updateProfile = "update_profile";
-const String personalInfo = "personal_info";
-const String drivingLicense = "driving_license";
-const String brtaReg = "brta_reg";
-const String insurancePaper = "insurance_paper";
-const String otherDoc = "other_doc";
+// const String gitAccessToken = "";
+
 
 const Transition transition = Transition.fadeIn;
 final Widget gapW3 = appWidget.gapW(3);
@@ -84,16 +75,4 @@ EdgeInsetsGeometry mainPadding(double leftRight, double topBottom,
         ? (bottomPadding ?? topBottom).h
         : (bottomPadding ?? topBottom),
   );
-}
-
-String formatDateForField(DateTime selectedDate, {String? dateFormat}) {
-  final formatedDate =
-  DateFormat(dateFormat ?? 'dd MMM yyyy, EEEE').format(selectedDate);
-  return formatedDate;
-}
-
-parseDateForField(String selectedDate, {String? dateFormat}) {
-  final parsedDate =
-  DateFormat(dateFormat ?? 'dd MMM yyyy, EEEE').parse(selectedDate);
-  return parsedDate;
 }

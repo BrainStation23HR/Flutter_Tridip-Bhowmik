@@ -34,7 +34,7 @@ class ApiClient {
     try {
       if (isHeaderRequired) {
 
-        dio?.options.headers["Authorization"] = "Bearer $token";
+        dio?.options.headers["Authorization"] = "Bearer ";
         if (isApplicationJson ?? true) {
           dio?.options.headers["Accept"] = "application/json";
         }
@@ -78,7 +78,7 @@ class ApiClient {
       if (isHeaderRequired) {
 
 
-          dio?.options.headers["Authorization"] = "Bearer $token";
+          dio?.options.headers["Authorization"] = "Bearer ";
 
 
         if (isApplicationJson) {
@@ -145,7 +145,7 @@ class ApiClient {
     try {
       if (isHeaderRequired) {
 
-        dio?.options.headers["Authorization"] = "Bearer $token";
+        dio?.options.headers["Authorization"] = "Bearer ";
         if (isApplicationJson) {
           dio?.options.headers["Accept"] = "application/json";
         }
@@ -197,7 +197,7 @@ class ApiClient {
     try {
       if (isHeaderRequired) {
 
-        dio?.options.headers["Authorization"] = "Bearer $token";
+        dio?.options.headers["Authorization"] = "Bearer ";
         if (isApplicationJson) {
           dio?.options.headers["Accept"] = "application/json";
         }
