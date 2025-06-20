@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.brainstation.assessment.brain_station_assessment_task"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
